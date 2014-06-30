@@ -1,0 +1,11 @@
+[[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
+[[$site.head? &bodyClass=`[[+uParent]]` &websiteType=`blog` &template=`default`]]
+
+<main role="main">
+    <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
+    [[*content]]
+
+    [[$articles.aside]]
+</main>
+
+[[$site.foot? &template=`default`]]
