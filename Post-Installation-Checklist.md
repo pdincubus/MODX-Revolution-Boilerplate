@@ -2,23 +2,7 @@
 
 ## Post installation check list
 
-1. Add new pages:
-    * "humans" - type = text, template = empty, richtext = no, published, hidden from menus
-    * "robots" - type = text, template = empty, richtext = no published, hidden from menus
-    * "Search Results" - template = SearchResults, published, hidden from menus
-    * "Page Not Found" - template = PageNotFound, pubslished, hidden from menus
-    * sitemap - type = XML, template = empty, richtext = no, published, hidden from menus, content = [[!GoogleSiteMap]]
-    * "Thank you" - template = Default, published, hidden from menus
-
-2. Update system settings:
-    * Set "error page" setting to the ID of the Page Not Found document
-    * Set Site Title
-    * If using phpThumbOf/pThumb, set the "Hash thumbnail names" to true/yes
-    * Enable friendly URLs, "Use friendly alias path", and "Automatically generate alias"
-    * Change the maximum file upload size (default is 1MB, add a 0 to the end to bump up to 10MB)
-    * Turn off descriptions for the top menu (much more pleasant!)
-
-3. Via FTP:
+1. Via FTP:
     * Rename the ht.access files to .htaccess in "/", "/manager", "/core"
     * Ensure that the following folders exist:
         * /core/components/
@@ -34,6 +18,22 @@
         * /core/export/
         * /core/import/
         * /core/package/
+
+2. Update system settings:
+    * Set "error page" setting to the ID of the Page Not Found document
+    * Set Site Title
+    * If using phpThumbOf/pThumb, set the "Hash thumbnail names" to true/yes
+    * Enable friendly URLs, "Use friendly alias path", and "Automatically generate alias"
+    * Change the maximum file upload size (default is 1MB, add a 0 to the end to bump up to 10MB)
+    * Turn off descriptions for the top menu (much more pleasant!)
+
+3. Add new pages:
+    * "humans" - type = text, template = empty, richtext = no, published, hidden from menus
+    * "robots" - type = text, template = empty, richtext = no published, hidden from menus
+    * "Search Results" - template = SearchResults, published, hidden from menus
+    * "Page Not Found" - template = PageNotFound, pubslished, hidden from menus
+    * sitemap - type = XML, template = empty, richtext = no, published, hidden from menus, content = [[!GoogleSiteMap]]
+    * "Thank you" - template = Default, published, hidden from menus
 
 4. Via the Manager:
     * Duplicate the "Default" template, and give a sensible name based on your project.
