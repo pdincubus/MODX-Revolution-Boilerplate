@@ -1,22 +1,6 @@
 #MODX Revolution Boilerplate basics
 
-This is mostly a duplicate of the original MODX Revo Boilerplate that I created - but transitioned to SCSS and set up with Grunt for niceness.
-  
-##Getting started
-  
-This repository is set up for using [Grunt](http://gruntjs.com/). As such, the transport package (from here or from the MODX Extras repo) ONLY contains chunks, snippets and templates and NO assets. Setting Grunt up as per the below will give you lovely minified Javascript and CSS output and allow you to use the lovely SCSS for writing all your styles.
-  
-###Prerequisites
-  
-1. Node.js
-2. This repo.
-
-###Do stuff
-
-* Clone this repo.
-* cd /this/dir
-* npm install
-* grunt -v
+This is mostly a duplicate of the original MODX Revo Boilerplate that I created - but altered to work the way I mostly actually work. This repo *only* has templates, chunks, snippets and a few bits of useful stuff. There are *no* assets provided any more. I use a separate project skeleton repo to get my base LESS/SCSS/JS stuff all grunt-ed.
 
 ##MODX Post Installation Checklist
 
@@ -50,6 +34,10 @@ The placeholders you'll need to set up and add values for are:
 * [[++facebookAppId]]
 
 If you don't use/want/need any of the above, just set a value directly in the relevant chunk or remove the block of code no longer needed.
+
+##Template variables
+
+I've made reference in the [[$site.head]] chunk to a template variable called 'mainImg' - this is usually one of the first TVs I'll add to a new site. If you don't want this, change it in the chunk.
 
 
 ##Templates
