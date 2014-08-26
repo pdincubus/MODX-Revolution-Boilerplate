@@ -16,7 +16,7 @@
 
         <p>Dear [[+formName]]</p>
 
-        <h2>Thanks for your email receieved from this page on our site: "[[+formPage]]".</h2>
+        <h2>Thanks for your email received from this page on our site: "[[+formPage]]".</h2>
         <p>Please find below a copy of the information you sent. Someone will be in touch soon!</p>
 
         <table border="0" cellspacing="0" cellpadding="0">
