@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <title>Email submission</title>
         <style type="text/css">
             table { width: 100%; font-size: 120%; border-collapse: collapse; }
             table table { font-size: 100%; }
@@ -18,16 +19,19 @@
                     <th scope="row" style="width:150px">Name</th>
                     <td colspan="2">[[+formName:notags]]</td>
                 </tr>
+
                 <tr>
-                <th scope="row" style="width:150px">Email address</th>
+                    <th scope="row" style="width:150px">Email address</th>
                     <td colspan="2">[[+formEmailAddress:notags]]</td>
                 </tr>
+
                 <tr>
-                <th scope="row" style="width:150px">Phone number</th>
+                    <th scope="row" style="width:150px">Phone number</th>
                     <td colspan="2">[[+formPhoneNumber:notags]]</td>
                 </tr>
+
                 <tr>
-                <th scope="row" style="width:150px">Your Query</th>
+                    <th scope="row" style="width:150px">Your Query</th>
                   <td colspan="2">[[+formQuery:notags]]</td>
                 </tr>
             </tbody>
