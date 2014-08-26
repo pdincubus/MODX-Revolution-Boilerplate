@@ -1,5 +1,5 @@
 [[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
-[[$site.head? &bodyClass=`[[+uParent]]` &websiteType=`article` &template=`default`]]
+[[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`article`]]
 
 <main role="main">
     <article>
@@ -24,4 +24,4 @@
     [[$articles.aside]]
 </main>
 
-[[$site.foot? &template=`default`]]
+[[$site.foot]]
