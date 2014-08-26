@@ -1,7 +1,9 @@
+<?php
 /*
  * fiProcessArrays formit hook. Processes all values stored as arrays and implodes them.
  * Copyright Oleg Pryadko (websitezen.com) 2011
  * License GPL 2 or later
+ * http://forums.modx.com/thread/47606/formit-how-to-use-checkbox-array#dis-post-275189
 */
 $fieldSuffix = $modx->getOption('fipaFieldSuffix',$scriptProperties,'_values');
 $separator = $modx->getOption('fipaValueSeparator',$scriptProperties,', ');
