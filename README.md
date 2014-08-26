@@ -1,5 +1,7 @@
 #MODX Revolution Boilerplate basics
 
+Now on the [MODX extras respository](http://modx.com/extras/package/modxrevolutionboilerplate)!
+
 This is mostly a duplicate of the original MODX Revo Boilerplate that I created - but altered to work the way I mostly actually work. This repo *only* has templates, chunks, snippets and a few bits of useful stuff. There are *no* assets provided any more. I use a separate project skeleton repo to get my base LESS/SCSS/JS stuff all grunt-ed.
 
 ##MODX Post Installation Checklist
