@@ -1,4 +1,4 @@
-<form id="quick-search" action="[[~[[+landing:default=`[[*id]]`]]]]" method="[[+method:default=`get`]]">
+<form class="quick-search" action="[[~[[+landing:default=`[[*id]]`]]]]" method="[[+method:default=`get`]]" role="search">
     <p>
         <label for="[[+searchIndex]]">[[%sisea.search? &namespace=`sisea` &topic=`default`]]</label>
         <input type="text" name="[[+searchIndex]]" id="[[+searchIndex]]" value="[[+searchValue]]">

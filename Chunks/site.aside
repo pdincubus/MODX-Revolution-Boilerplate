@@ -1,5 +1,6 @@
 [[Wayfinder? &startId=`[[setPlaceholders? &ph=`Uparent2.id !! id` &output=`1`]]` &rowTpl=`wf.row` &level=`2` &ph=`subnav` &hideSubMenus=`1`]]
-<aside>
+
+<aside role="complimentary">
     [[+subnav:notempty=`
     <nav>
         [[+subnav]]
