@@ -1,4 +1,4 @@
-<aside>
+<aside role="complimentary">
     <h3>Latest Posts</h3>
     <ul>
         [[+latest_posts:default=`
@@ -27,5 +27,5 @@
         `]]
     </ul>
 
-    [[SimpleSearchForm? &tpl=`ss.form` &landing=`{ID_OF_SEARCH_RESULTS_LANDING_PAGE}`]]
+    [[SimpleSearchForm? &tpl=`ss.form` &landing=`[[++searchResultsLandingPage]]`]]
 </aside>
