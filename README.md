@@ -148,11 +148,6 @@ Other recommendations:
 * [Collections](http://modx.com/extras/package/collections). Hide child pages in the resource tree and gives you a grid for easy searching/viewing of the child pages.
 
 
-##Transport Package
-
-Now available on the MODX Extras repo: [MODX-Revo-Boilerplate](http://modx.com/extras/package/modxrevoboilerplate)
-
-
 ##Additional
 
 * Thanks (as usual) to [Mister John](https://github.com/johnnoel) for a couple of the snippets which accompany the SimpleSearch on the Page Not Found error page.
