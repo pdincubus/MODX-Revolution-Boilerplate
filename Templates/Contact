@@ -1,5 +1,6 @@
 [[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
-[[$site.head? &bodyClass=`[[+uParent]]` &websiteType=`website` &template=`default`]]
+
+[[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`website`]]
 
 <main role="main">
     <article>
@@ -9,13 +10,17 @@
         [[$fi.contact-form?
             &formId=`contactUs`
             &emailChunk=`fi.contact-email`
-            &emailToAddress=`{EMAIL_ADDRESS}`
-            &emailFromName=`{NAME}`
-            &emailFromAddress=`{EMAIL_ADDRESS}`
+            &toEmailAddress=`{EMAIL_ADDRESS}`
+            &fromEmailName=`{NAME}`
+            &fromEmailAddress=`{EMAIL_ADDRESS}`
             &validation=`formName:required,formEmailAddress:email:required,formQuery:required`
             &redirectTo=`{PAGE_ID}`
+            &recaptchaTheme=`blackglass`
+            &auroresponseChunk=`fi.contact-autoresponse`
+            &replyToEmailAddress=`{EMAIL_ADDRESS}`
+            &replyToEmailName=`{NAME}`
         ]]
     </article>
 </main>
 
-[[$site.foot? &template=`default`]]
+[[$site.foot]]
