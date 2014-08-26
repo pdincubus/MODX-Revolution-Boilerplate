@@ -1,5 +1,6 @@
 [[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
-[[$site.head? &bodyClass=`[[+uParent]]` &websiteType=`website` &template=`default`]]
+
+[[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`website`]]
 
 <main role="main">
     <article>
@@ -8,9 +9,18 @@
         [[*content]]
 
         <h2>Possible matches for '[[!currentUrl]]'</h2>
+
         [[!formatSearchUrl? &requestIndex=`urlSearch`]]
-        [[!SimpleSearch? &searchIndex=`urlSearch` &tpl=`ss.result-item` &perPage=`10` &highlightResults=`1` &highlightClass=`searchHighlight` &containerTpl=`ss.result-container`]]
+
+        [[!SimpleSearch?
+            &searchIndex=`urlSearch`
+            &tpl=`ss.result-item`
+            &perPage=`10`
+            &highlightResults=`1`
+            &highlightClass=`search-highlight`
+            &containerTpl=`ss.result-container`
+        ]]
     </article>
 </main>
 
-[[$site.foot? &template=`default`]]
+[[$site.foot]]
