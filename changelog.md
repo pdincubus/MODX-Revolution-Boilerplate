@@ -2,6 +2,10 @@ For all info: https://github.com/pdincubus/MODX-Revolution-Boilerplate/
 
 #Most recent additions
 
+##1.0.1
+
+* Fix pdoMenu chunk names in site.head chunk
+
 ##1.0
 
 * Remove previous transport package
