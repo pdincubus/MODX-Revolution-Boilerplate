@@ -1,0 +1,5 @@
+<article class="post">
+    <h2><a href="[[~[[+id]]]]">[[+pagetitle]]</a></h2>
+    <p>Posted on <time datetime="[[+publishedon:date=`%Y-%M-%d`]]">[[+publishedon:date=`%b %d, %Y`]]</time></p>
+    <p>[[+introtext:default=`[[+content:ellipsis=`400`]]`]]</p>
+</article>
