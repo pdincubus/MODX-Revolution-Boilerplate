@@ -23,8 +23,14 @@ The placeholders you'll need to set up and add values for are:
 * [[++twitterHandle]]
 * [[++sharerImage]]
 * [[++facebookAppId]]
+* [[++contactToEmailAddress]]
+* [[++contactFromEmailName]]
+* [[++contactFromEmailAddress]]
+* [[++contactRedirectTo]]
+* [[++contactReplyToEmailAddress]]
+* [[++contactReplyToEmailName]]
 
-If you don't use/want/need any of the above, just set a value directly in the relevant chunk or remove the block of code no longer needed.
+If you don't use/want/need any of the above, just set a value directly in the relevant chunk or remove the block of code no longer needed. All the placeholders that begin with ++contact are for the Contact template form and are required if you expect it to work. If you don't want to use ClientConfig, you're going to need to edit the Contact template manually.
 
 ##Template variables
 
