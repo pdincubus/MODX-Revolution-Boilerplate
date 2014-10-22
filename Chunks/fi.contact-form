@@ -26,21 +26,24 @@
         <legend>Contact Us</legend>
         <input type="hidden" value="[[*pagetitle]]" name="formPage" id="formPage">
         <p>
-            <label for="formName">Name [[!+fi.error.formName:notempty=`<span class="error">[[!+fi.error.formName]]</span>`]]</label>
+            <label for="formName">Name [[!+fi.error.formName:notempty=`[[!+fi.error.formName]]`]]</label>
             <input type="text" name="formName" id="formName" value="[[!+fi.formName]]" placeholder="Name">
         </p>
         <p>
-            <label for="formEmailAddress">Email address [[!+fi.error.formEmailAddress:notempty=`<span class="error">[[!+fi.error.formEmailAddress]]</span>`]]</label>
+            <label for="formEmailAddress">Email address [[!+fi.error.formEmailAddress:notempty=`[[!+fi.error.formEmailAddress]]`]]</label>
             <input type="email" name="formEmailAddress" id="formEmailAddress" value="[[!+fi.formEmailAddress]]"  placeholder="Email address">
         </p>
         <p>
-            <label for="formPhoneNumber">Telephone number [[!+fi.error.formPhoneNumber:notempty=`<span class="error">[[!+fi.error.formPhoneNumber]]</span>`]]</label>
+            <label for="formPhoneNumber">Telephone number [[!+fi.error.formPhoneNumber:notempty=`[[!+fi.error.formPhoneNumber]]`]]</label>
             <input type="text" name="formPhoneNumber" id="formPhoneNumber" value="[[!+fi.formPhoneNumber]]" placeholder="Telephone number">
         </p>
         <p>
-            <label for="formQuery">Enquiry [[!+fi.error.formQuery:notempty=`<span class="error">[[!+fi.error.formQuery]]</span>`]]</label>
+            <label for="formQuery">Enquiry [[!+fi.error.formQuery:notempty=`[[!+fi.error.formQuery]]`]]</label>
             <textarea rows="5" cols="30" name="formQuery" id="formQuery" placeholder="Enquiry">[[!+fi.formQuery]]</textarea>
         </p>
+
+        <p>
+            <button type="submit">Send</button>
+        </p>
     </fieldset>
-    <button type="submit">Send</button>
 </form>
