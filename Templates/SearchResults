@@ -10,10 +10,30 @@
 
         [[!SimpleSearch?
             &tpl=`ss.result-item`
-            &perPage=`10`
-            &highlightResults=`1`
-            &highlightClass=`search-highlight`
             &containerTpl=`ss.result-container`
+            &currentPageTpl=`ss.pagination-current`
+            &pageTpl=`ss.pagination-page`
+            &noResultsTpl=`ss.no-results`
+
+            &depth=`10`
+            &perPage=`10`
+            &pageVarKey=`page`
+            &pagingSeparator=``
+
+            &highlightResults=`1`
+            &highlightClass=`highlight`
+            &highlightTag=`span`
+            &extractLength=`[[++searchExtractLength]]`
+
+            &includeTVs=`1`
+            &processTVs=`1`
+            &searchTvs=`[[++searchTVList]]`
+
+            &useAllWords=`0`
+            &searchStyle=`partial`
+            &matchWildcard=`1`
+            &andTerms=`1`
+            &cleanupExtract=`0`
         ]]
     </article>
 </main>
