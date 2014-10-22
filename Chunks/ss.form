@@ -1,8 +1,12 @@
 <form class="quick-search" action="[[~[[+landing:default=`[[*id]]`]]]]" method="[[+method:default=`get`]]" role="search">
-    <p>
-        <label for="[[+searchIndex]]">[[%sisea.search? &namespace=`sisea` &topic=`default`]]</label>
-        <input type="text" name="[[+searchIndex]]" id="[[+searchIndex]]" value="[[+searchValue]]">
-        <input type="hidden" name="id" value="[[+landing:default=[[*id]]]]">
-        <button type="submit">[[%sisea.search? &namespace=`sisea` &topic=`default`]]</button>
-    </p>
+    <fieldset>
+        <legend>Search</legend>
+
+        <p>
+            <label for="[[+searchIndex]]">Search terms</label>
+            <input type="text" name="[[+searchIndex]]" id="[[+searchIndex]]" value="[[+searchValue]]">
+            <input type="hidden" name="id" value="[[+landing:default=[[*id]]]]">
+            <button type="submit">[[%sisea.search? &namespace=`sisea` &topic=`default`]]</button>
+        </p>
+    </fieldset>
 </form>
