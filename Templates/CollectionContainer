@@ -3,16 +3,18 @@
 [[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`blog`]]
 
 <main role="main">
-    <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
+    <article>
+        <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
 
-    [[!pdoPage?
-        &element=`pdoResources`
-        &parents=`[[*id]]`
-        &tpl=`pr.child-page`
-        &limit=`5`
-    ]]
+        [[!pdoPage?
+            &element=`pdoResources`
+            &parents=`[[*id]]`
+            &tpl=`pr.child-page`
+            &limit=`5`
+        ]]
 
-    [[!+page.nav:notempty=`<ul class="pagination">[[!+page.nav]]</ul>`]]
+        [[!+page.nav:notempty=`[[!+page.nav]]`]]
+    </article>
 </main>
 
 [[$site.foot]]
