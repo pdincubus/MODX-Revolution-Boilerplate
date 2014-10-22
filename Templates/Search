@@ -1,0 +1,18 @@
+[[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
+
+[[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`website`]]
+
+<main role="main">
+    <article>
+        <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
+        [[*introtext:notempty=`<p class="intro">[[*introtext]]</p>`]]
+        [[*content]]
+
+        [[$ss.form?
+            &searchIndex=`search`
+            &landing=`[[++searchResultsLandingID]]`
+        ]]
+    </article>
+</main>
+
+[[$site.foot]]
