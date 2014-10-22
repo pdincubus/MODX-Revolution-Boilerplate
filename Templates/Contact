@@ -10,15 +10,15 @@
         [[$fi.contact-form?
             &formId=`contactUs`
             &emailChunk=`fi.contact-email`
-            &toEmailAddress=`{EMAIL_ADDRESS}`
-            &fromEmailName=`{NAME}`
-            &fromEmailAddress=`{EMAIL_ADDRESS}`
+            &toEmailAddress=`[[++contactToEmailAddress]]`
+            &fromEmailName=`[[++contactFromEmailName]]`
+            &fromEmailAddress=`[[++contactFromEmailAddress]]`
             &validation=`formName:required,formEmailAddress:email:required,formQuery:required`
-            &redirectTo=`{PAGE_ID}`
+            &redirectTo=`[[++contactRedirectTo]]`
             &recaptchaTheme=`blackglass`
             &auroresponseChunk=`fi.contact-autoresponse`
-            &replyToEmailAddress=`{EMAIL_ADDRESS}`
-            &replyToEmailName=`{NAME}`
+            &replyToEmailAddress=`[[++contactReplyToEmailAddress]]`
+            &replyToEmailName=`[[++contactReplyToEmailName]]`
         ]]
     </article>
 </main>
