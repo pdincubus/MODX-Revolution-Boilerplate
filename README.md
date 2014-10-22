@@ -29,8 +29,13 @@ The placeholders you'll need to set up and add values for are:
 * [[++contactRedirectTo]]
 * [[++contactReplyToEmailAddress]]
 * [[++contactReplyToEmailName]]
+* [[++searchResultsLandingID]]
+* [[++searchTVList]]
+* [[++searchExtractLength]]
 
 If you don't use/want/need any of the above, just set a value directly in the relevant chunk or remove the block of code no longer needed. All the placeholders that begin with ++contact are for the Contact template form and are required if you expect it to work. If you don't want to use ClientConfig, you're going to need to edit the Contact template manually.
+
+Placeholders starting with search are required for the search/search results pages. [[++searchTVList]] should be a comma separated string.
 
 ##Template variables
 
