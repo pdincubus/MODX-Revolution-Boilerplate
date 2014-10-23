@@ -2,9 +2,8 @@
 
 <div class="sisea-paging">
     <span class="sisea-result-pages">[[%sisea.result_pages? &namespace=`sisea` &topic=`default`]]</span>
-    <ul>
-        [[+paging]]
-    </ul>
+
+    [[+paging]]
 </div>
 
 <ol class="searchResults">
