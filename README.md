@@ -29,6 +29,8 @@ The placeholders you'll need to set up and add values for are:
 * [[++contactRedirectTo]]
 * [[++contactReplyToEmailAddress]]
 * [[++contactReplyToEmailName]]
+* [[++contactEmailFromName]]
+* [[++contactEmailFromAddress]]
 * [[++searchResultsLandingID]]
 * [[++searchTVList]]
 * [[++searchExtractLength]]

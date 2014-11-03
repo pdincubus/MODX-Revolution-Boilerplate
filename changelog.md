@@ -2,6 +2,11 @@ For all info: https://github.com/pdincubus/MODX-Revolution-Boilerplate/
 
 #Most recent additions
 
+##1.1.1
+
+* Fix up some FormIt autoresponder things
+* Slight alterations to contact template for the above
+
 ##1.1
 
 * Added: Collection container and Collection child templates
