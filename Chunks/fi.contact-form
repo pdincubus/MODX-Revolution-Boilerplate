@@ -11,12 +11,16 @@
         formEmailAddress:email:required,
         formQuery:required,
     `]]`
+    &vTextRequired=`required`
+    &errTpl=`[[+error]]`
     &recaptchaTheme=`[[+recaptchaTheme:default=`blackglass`]]`
     &fiarTpl=`[[+auroresponseChunk]]`
     &fiarSubject=`Thank you for your email`
     &fiarToField=`formEmailAddress`
     &fiarReplyTo=`[[+replyToEmailAddress]]`
     &fiarReplyToName=`[[+replyToEmailName]]`
+    &fiarFrom=`[[+autoResponseFromAddress]]`
+    &fiarFromName=`[[+autoResponseFromName]]`
 ]]
 
 [[!+fi.error_message:notempty=`<p class="error">[[!+fi.error_message]]</p>`]]

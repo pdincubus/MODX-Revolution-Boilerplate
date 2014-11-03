@@ -19,6 +19,8 @@
             &auroresponseChunk=`fi.contact-autoresponse`
             &replyToEmailAddress=`[[++contactReplyToEmailAddress]]`
             &replyToEmailName=`[[++contactReplyToEmailName]]`
+            &autoResponseFromAddress=`[[++contactEmailFromAddress]]`
+            &autoResponseFromName=`[[++contactEmailFromName]]`
         ]]
     </article>
 </main>
