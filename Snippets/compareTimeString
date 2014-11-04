@@ -1,0 +1,21 @@
+<?php
+/*
+* compareTimeString
+*
+* Simple time comparison snippet
+* Allows you to configure the true and false outputs
+* True is if compared time is less than current time
+*
+* @author Phil Steer (pdincubus)
+* @github https://github.com/pdincubus/
+*/
+$compareTimeString = intval($modx->getOption('time', $scriptProperties, 0));
+$currentTimeString = date('U');
+$ifStatement = $modx->getOption('if', $scriptProperties, 'true');
+$elseStatement = $modx->getOption('else', $scriptProperties, 'false');
+
+if ( $compareTimeString <= $currentTimeString ) {
+    return $ifStatement;
+} else {
+    return $elseStatement;
+}
