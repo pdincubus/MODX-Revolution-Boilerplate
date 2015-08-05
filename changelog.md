@@ -2,6 +2,14 @@ For all info: https://github.com/pdincubus/MODX-Revolution-Boilerplate/
 
 #Most recent additions
 
+##1.1.2
+
+* Add AutoRetriever to personalise thank you page for contact form
+* Make contact for have a default ID if none is passed to the chunk
+* New ContactThanks template
+* Change names of two ClientConfig global placeholders to make better sense
+* Updated README
+
 ##1.1.1
 
 * Fix up some FormIt autoresponder things
