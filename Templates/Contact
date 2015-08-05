@@ -8,7 +8,7 @@
         [[*content]]
 
         [[$fi.contact-form?
-            &formId=`contactUs`
+            &formId=`contact-us`
             &emailChunk=`fi.contact-email`
             &toEmailAddress=`[[++contactToEmailAddress]]`
             &fromEmailName=`[[++contactFromEmailName]]`
@@ -19,8 +19,8 @@
             &auroresponseChunk=`fi.contact-autoresponse`
             &replyToEmailAddress=`[[++contactReplyToEmailAddress]]`
             &replyToEmailName=`[[++contactReplyToEmailName]]`
-            &autoResponseFromAddress=`[[++contactEmailFromAddress]]`
-            &autoResponseFromName=`[[++contactEmailFromName]]`
+            &autoResponseFromAddress=`[[++contactAutoEmailFromAddress]]`
+            &autoResponseFromName=`[[++contactAutoEmailFromName]]`
         ]]
     </article>
 </main>
