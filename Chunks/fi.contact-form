@@ -10,6 +10,7 @@
         formName:required,
         formEmailAddress:email:required,
         formQuery:required,
+        whatAreYouDoing:blank
     `]]`
     &vTextRequired=`required`
     &errTpl=`[[+error]]`
@@ -49,6 +50,7 @@
 
         <p>
             <button type="submit">Send</button>
+            <input type="hidden" name="whatAreYouDoing" value="">
             [[!FormItRetriever]]
         </p>
     </fieldset>

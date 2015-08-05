@@ -13,7 +13,7 @@
             &toEmailAddress=`[[++contactToEmailAddress]]`
             &fromEmailName=`[[++contactFromEmailName]]`
             &fromEmailAddress=`[[++contactFromEmailAddress]]`
-            &validation=`formName:required,formEmailAddress:email:required,formQuery:required`
+            &validation=`formName:required,formEmailAddress:email:required,formQuery:required,whatAreYouDoing:blank`
             &redirectTo=`[[++contactRedirectTo]]`
             &recaptchaTheme=`blackglass`
             &auroresponseChunk=`fi.contact-autoresponse`

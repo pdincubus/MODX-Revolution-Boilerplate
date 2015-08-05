@@ -9,6 +9,7 @@ For all info: https://github.com/pdincubus/MODX-Revolution-Boilerplate/
 * New ContactThanks template
 * Change names of two ClientConfig global placeholders to make better sense
 * Updated README
+* Add empty SPAMbot form field with :blank validator
 
 ##1.1.1
 
