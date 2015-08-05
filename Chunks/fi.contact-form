@@ -21,6 +21,7 @@
     &fiarReplyToName=`[[+replyToEmailName]]`
     &fiarFrom=`[[+autoResponseFromAddress]]`
     &fiarFromName=`[[+autoResponseFromName]]`
+    &store=`1`
 ]]
 
 [[!+fi.error_message:notempty=`<p class="error">[[!+fi.error_message]]</p>`]]
@@ -48,6 +49,7 @@
 
         <p>
             <button type="submit">Send</button>
+            [[!FormItRetriever]]
         </p>
     </fieldset>
 </form>

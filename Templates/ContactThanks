@@ -1,0 +1,12 @@
+[[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
+
+[[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`website`]]
+
+<main role="main">
+    <article>
+        <h1>Thank you!</h1>
+        <p>Thank you for contacting us, [[!+fi.name]]. An email will be sent to you at [[!+fi.email]].</p>
+    </article>
+</main>
+
+[[$site.foot]]
