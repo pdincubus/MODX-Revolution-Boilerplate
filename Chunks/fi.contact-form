@@ -25,7 +25,7 @@
 
 [[!+fi.error_message:notempty=`<p class="error">[[!+fi.error_message]]</p>`]]
 
-<form method="post" action="[[~[[*id]]]]"[[+formId:notempty=` id="[[+formId]]"`]]>
+<form method="post" action="[[~[[*id]]]]" id="[[+formId:default=`contact-us`]]">
     <fieldset>
         <legend>Contact Us</legend>
         <input type="hidden" value="[[*pagetitle]]" name="formPage" id="formPage">
@@ -35,7 +35,7 @@
         </p>
         <p>
             <label for="formEmailAddress">Email address [[!+fi.error.formEmailAddress:notempty=`[[!+fi.error.formEmailAddress]]`]]</label>
-            <input type="email" name="formEmailAddress" id="formEmailAddress" value="[[!+fi.formEmailAddress]]"  placeholder="Email address">
+            <input type="email" name="formEmailAddress" id="formEmailAddress" value="[[!+fi.formEmailAddress]]" placeholder="Email address">
         </p>
         <p>
             <label for="formPhoneNumber">Telephone number [[!+fi.error.formPhoneNumber:notempty=`[[!+fi.error.formPhoneNumber]]`]]</label>
