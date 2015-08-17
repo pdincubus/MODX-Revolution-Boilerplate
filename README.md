@@ -146,19 +146,11 @@ Things you're more than likely going to need:
 * [pThumb](https://github.com/oo12/phpThumbOf). Crop, thumbnail and alter images automagically. Offers improvements (especially in speed!) over the original phpThumbOf.
 * [CodeMirror](http://modx.com/extras/package/codemirror). Syntax highlighting and stuff for anything that isn't a standard content page.
 * [VersionX](https://github.com/Mark-H/VersionX2). Content / chunk version tracker extra. Useful for rolling back to a previous version of something.
-* [TinyMCE](http://modx.com/extras/package/tinymce). Pretty much the only choice you have for a reasonable text editor in MODX Revo. There is a CKEditor extra but the last time I tried it out it didn't have internal link integration like TinyMCE does. Shame because it's a much nicer RTE.
-* [Redactor from ModMore](https://www.modmore.com/?via=231) - I would heartily recommend this because it's so much nicer, has great integration and is much better overall than either of the other options. It's a paid-for extra, but it's seriously worth every penny.
-
-If you want to set up basic blogging and want something you can just drop in:
-
-* [Articles](http://rtfm.modx.com/extras/revo/articles). This in turn installs a load of extras it needs. Useful for simple blogs.
-* [getRelated](http://rtfm.modx.com/extras/revo/getrelated). Goes and sees if it can find content related to the page you're on. Useful in Articles pages.
-
-Other recommendations:
-
+* [Redactor from ModMore](https://www.modmore.com/extras/redactor/?via=231) - I would heartily recommend this because it's so much nicer, has great integration and is much better overall than either of the other options. It's a paid-for extra, but it's seriously worth every penny. Also check out [MoreGallery](https://www.modmore.com/extras/moregallery/?via=231) and [ContentBlocks](https://www.modmore.com/extras/contentblocks/?via=231) while you're there.
 * [ClientConfig](https://www.modmore.com/extras/clientconfig/). Lets you set up global placeholders that your clients can edit easily.
 * [JSONDerulo](http://modx.com/extras/package/jsonderulo). Pulls in and outputs JSON feeds for common social feeds.
 * [Collections](http://modx.com/extras/package/collections). Hide child pages in the resource tree and gives you a grid for easy searching/viewing of the child pages.
+* [getRelated](http://rtfm.modx.com/extras/revo/getrelated). Goes and sees if it can find content related to the page you're on. Useful in Articles pages.
 
 
 ##Additional
