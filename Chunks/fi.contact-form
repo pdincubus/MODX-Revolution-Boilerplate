@@ -1,5 +1,5 @@
 [[!FormIt?
-    &hooks=`fiProcessArrays,email,redirect,recaptcha,FormItAutoResponder`
+    &hooks=`fiProcessArrays,email,FormItAutoResponder,FormItSaveForm,redirect`
     &emailTpl=`[[+emailChunk]]`
     &emailTo=`[[+toEmailAddress]]`
     &emailSubject=`Contact from [[++site_name]]`
@@ -23,6 +23,8 @@
     &fiarFrom=`[[+autoResponseFromAddress]]`
     &fiarFromName=`[[+autoResponseFromName]]`
     &store=`1`
+    &formFields=`fieldNames,formPhoneNumber,formEmailAddress,formQuery`
+    &fieldNames=`formName==Name,formPhoneNumber==Phone,formEmailAddress==Email,formQuery==Enquiry`
 ]]
 
 [[!+fi.error_message:notempty=`<p class="error">[[!+fi.error_message]]</p>`]]
