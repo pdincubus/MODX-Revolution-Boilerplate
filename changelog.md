@@ -2,6 +2,10 @@ For all info: https://github.com/pdincubus/MODX-Revolution-Boilerplate/
 
 #Most recent additions
 
+##1.1.3
+
+* Tweaks to contact form to fix storing in MODX database, redirect fixes and markup changes
+
 ##1.1.2
 
 * Add AutoRetriever to personalise thank you page for contact form
