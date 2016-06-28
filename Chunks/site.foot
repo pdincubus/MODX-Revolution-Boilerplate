@@ -1,13 +1,29 @@
-        <footer role="contentinfo">
+        <footer class="site-footer">
             <p>&copy; [[!copyYears?startYear=`2014`]] <a href="[[++site_url]]">[[++site_name]]</a></p>
         </footer>
 
-        <script src="/assets/templates/[[++templateFolderName]]/js/main.min.js"></script>
+        <!-- use https://github.com/js-cookie/js-cookie to check and set cookies and add some JS to the button click for old IE users! -->
 
-        <!--[if (gte IE 6)&(lte IE 8)]>
-          <script type="text/javascript" src="/assets/templates/[[++templateFolderName]]/js/selectivizr-min.js"></script>
+        <!--[if lt IE 9]>
+            <div class="old-ie">
+                <p>You are using a very old version of Internet Explorer. For the best experience, please upgrade to at least Internet Explorer 11, or use an alternative browser such as Microsoft Edge, Chrome or Firefox</p>
+                <button type="button" class="old-ie-close">Understood, don't show me this again.</button>
+                <p><small>This stores a cookie on your computer to remember your settings</small></p>
+            </div>
         <![endif]-->
 
+        <noscript><p>You're running a browser with Javascript disabled. For the best experience, please enable Javascript in your browser settings.</p></noscript>
+
+        <!--easy way to trigger javascript functionality base on actual CSS breakpoints-->
+        <div class="trigger-size mobile"></div>
+        <div class="trigger-size mobile-large"></div>
+        <div class="trigger-size tablet"></div>
+        <div class="trigger-size desktop"></div>
+        <div class="trigger-size desktop-wide"></div>
+
+        <script src="/assets/templates/[[++templateFolderName]]/js/general.js"></script>
+
+        [[++gaSiteCode:notempty=`
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -16,5 +32,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','[[++gaSiteCode]]');ga('send','pageview');
         </script>
+        `]]
     </body>
 </html>
