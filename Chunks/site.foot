@@ -4,13 +4,15 @@
 
         <!-- use https://github.com/js-cookie/js-cookie to check and set cookies and add some JS to the button click for old IE users! -->
 
-        <!--[if lt IE 9]>
-            <div class="old-ie">
-                <p>You are using a very old version of Internet Explorer. For the best experience, please upgrade to at least Internet Explorer 11, or use an alternative browser such as Microsoft Edge, Chrome or Firefox</p>
-                <button type="button" class="old-ie-close">Understood, don't show me this again.</button>
-                <p><small>This stores a cookie on your computer to remember your settings</small></p>
-            </div>
-        <![endif]-->
+        <div class="old-browser" aria-live="assertive" aria-hidden="true">
+            <p>You are using a very old browser.</p>
+            <p>For the best experience please upgrade to a newer browser, like Chrome, Opera, Firefox, Edge or Safari.</p>
+            <p>While we have made every effort for this site to be accessible to all, we cannot guarantee the full experience in your current browser.</p>
+
+            <button type="button" class="old-browser-accept">Understood, don't show me this again.</button>
+
+            <p><small>This stores a cookie on your computer to remember your settings</small></p>
+        </div>
 
         <noscript><p>You're running a browser with Javascript disabled. For the best experience, please enable Javascript in your browser settings.</p></noscript>
 
