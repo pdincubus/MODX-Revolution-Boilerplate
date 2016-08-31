@@ -72,40 +72,53 @@ All templates also pull in the same site.head and site.foot chunks.
     Beginning and end of the templates. See section further up for global placeholders you'll need to get these working.
 
     [[+bodyClass]] is useful for complex sites and when passed into the [[$site.head]] will add that class name to the body tag. Can help save a bunch of extra templates (sometimes).
-* articles.aside
 
-    Contains most things that were pulled out of the stock Articles templates but are repeated on both container and article template. Nicely wrapped in an aside chunk.
-* fi.contact-email and fi.contact-form
+* fi.contact-email, fi.contact-form, fi.contact-autoresponse
 
     Install the FormIt extra, and with these two simple chunks you can easily drop a working contact form on any page with little to no customisation required.
+
 * pm.row and pm.outer
 
     Wayfinder's/pdoMenu's default setup for outputting a menu item needs a bit of tweaking since we've used the link_attributes to apply a class to the body tag.
-* quip.comment, quip.add-comment, articles.latest-post-tpl, articles.archive-group-by-year, articles.article-row-tpl, articles.archive-row
 
-    Replacement, lovely and trimmed down version of the standard Quip chunk. I'll no longer be maintaining the quip chunks as I don't like quip so much, and if I absolutely have to drop some commenting into a site, I'll generally add [Disqus](https://disqus.com/).
+* pr.child-page
 
+    For ouputting list of articles on the CollectionContainer template
+
+* ss.*
+    
+    A bunch of SimpleSearch chunks - used on PageNotFound and SearchResults
 
 ##Snippets
+
+* compareTimeString
+
+    Take a guess.
 
 * copyYears
 
     Works out the copyright for the footer.
+
 * createSelectOptions
 
     This takes the values from a TV and allows output as select options.
+
 * currentUrl
 
     Clue is in the name
+
 * dateFilters
 
     This is here so I don't lose it. Output some placeholders for next and previous months.
+
 * fiProcessArrays
 
     See: http://forums.modx.com/thread/47606/formit-how-to-use-checkbox-array#dis-post-275189
+
 * formatSearchUrl
 
     Some preformatting for passing to the SimpleSearch on the Page Not Found error page.
+
 * getUrlParam
 
     Ronseal. Gets a key and value from the current URL.
@@ -143,18 +156,18 @@ You're going to need the following extras to make all the basics here work:
 Things you're more than likely going to need:
 
 * [pThumb](https://github.com/oo12/phpThumbOf). Crop, thumbnail and alter images automagically. Offers improvements (especially in speed!) over the original phpThumbOf.
+* [Image+](https://github.com/oo12/imageSlim). Like an image TV, but with added features.
 * [CodeMirror](http://modx.com/extras/package/codemirror). Syntax highlighting and stuff for anything that isn't a standard content page.
 * [VersionX](https://github.com/Mark-H/VersionX2). Content / chunk version tracker extra. Useful for rolling back to a previous version of something.
 * [Redactor from ModMore](https://www.modmore.com/extras/redactor/?via=231) - I would heartily recommend this because it's so much nicer, has great integration and is much better overall than either of the other options. It's a paid-for extra, but it's seriously worth every penny. Also check out [MoreGallery](https://www.modmore.com/extras/moregallery/?via=231) and [ContentBlocks](https://www.modmore.com/extras/contentblocks/?via=231) while you're there.
 * [ClientConfig](https://www.modmore.com/extras/clientconfig/). Lets you set up global placeholders that your clients can edit easily.
 * [JSONDerulo](http://modx.com/extras/package/jsonderulo). Pulls in and outputs JSON feeds for common social feeds.
-* [Collections](http://modx.com/extras/package/collections). Hide child pages in the resource tree and gives you a grid for easy searching/viewing of the child pages.
+* [Collections](http://modx.com/extras/package/collections). Hide child pages in the resource tree and gives you a grid for easy searching/viewing of the child pages. WARNING: Collections and [Autofoldertron](https://github.com/rckt/autofoldertron) conflict on doc save, so please only use one or the other!
 * [getRelated](http://rtfm.modx.com/extras/revo/getrelated). Goes and sees if it can find content related to the page you're on. Useful in Articles pages.
+* [Formalicious](https://www.stercx.com/modx-extras/formalicious-beta) - Currently only a beta, but makes use of FormIt and CMPs to allow users to make their own forms that you can sort of control the output/style of. Not too shabby.
 
 
 ##Additional
 
 * Thanks (as usual) to [Mister John](https://github.com/johnnoel) for a couple of the snippets which accompany the SimpleSearch on the Page Not Found error page.
-* The background-size polyfill is from: [Louis Remi on Github](https://github.com/louisremi/background-size-polyfill)
-* The box-sizing polyfill is from: [Schepp on Github](https://github.com/Schepp/box-sizing-polyfill)
 
