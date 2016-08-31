@@ -16,7 +16,6 @@ I've set global placeholders in certain places, the easiest way to get these set
 The placeholders you'll need to set up and add values for are:
 
 * [[++templateFolderName]]
-* [[++searchResultsLandingPage]]
 * [[++googleSiteVerificationId]]
 * [[++msSiteVerificationId]]
 * [[++gaSiteCode]]
