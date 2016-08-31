@@ -1,7 +1,7 @@
 [[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
 [[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`article`]]
 
-<main role="main">
+<main>
     <article>
         <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
         <p>Posted on <time datetime="[[*publishedon:strtotime:date=`%Y-%M-%d`]]">[[*publishedon:strtotime:date=`%b %d, %Y`]]</time></p>

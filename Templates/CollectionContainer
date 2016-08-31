@@ -2,7 +2,7 @@
 
 [[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`blog`]]
 
-<main role="main">
+<main>
     <article>
         <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
 
