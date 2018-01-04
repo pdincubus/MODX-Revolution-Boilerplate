@@ -1,12 +1,20 @@
-For all info: https://github.com/pdincubus/MODX-Revolution-Boilerplate/
+# Changelog
 
-#Most recent additions
+[More info](https://github.com/pdincubus/MODX-Revolution-Boilerplate/)
 
-##1.2
+## 1.3
+
+* Update README, post installation checklist, humans.txt and changelog
+* Update site head and foot chunks
+* Simplify contact template and contact form chunk
+* Tweaks to all templates to use chunk prefix placeholder
+* Update search result chunk
+
+## 1.2
 
 * Remove old stuff I've not used in ages, re-organised a few bits. Updated the README.
 
-##1.1.3
+## 1.1.3
 
 * Tweaks to contact form to fix storing in MODX database, redirect fixes and markup changes
 

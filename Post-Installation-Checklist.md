@@ -11,25 +11,26 @@
             * /assets/templates/
             * /assets/images/
             * /assets/files/
-    * Make the following folders all writable:
+    * Make the following folders all writeable:
         * /assets/ and all sub folders
         * /core/cache/
         * /core/components/
         * /core/export/
         * /core/import/
         * /core/package/
+    * Make sure that /core/config/config.inc.php is not writeable
 
 2. Update system settings:
     * Set "error page" setting to the ID of the Page Not Found document
     * Set Site Title
     * If using phpThumbOf/pThumb, set the "Hash thumbnail names" to true/yes
     * Enable friendly URLs, "Use friendly alias path", and "Automatically generate alias"
-    * Change the maximum file upload size (default is 1MB, add a 0 to the end to bump up to 10MB)
+    * Check/change the maximum file upload size if required
     * Turn off descriptions for the top menu (much more pleasant!)
 
 3. Add new pages:
     * "humans" - type = text, template = empty, richtext = no, published, hidden from menus
-    * "robots" - type = text, template = empty, richtext = no published, hidden from menus
+    * "robots" - type = text, template = empty, richtext = no, published, hidden from menus
     * "Search Results" - template = SearchResults, published, hidden from menus
     * "Page Not Found" - template = PageNotFound, pubslished, hidden from menus
     * sitemap - type = XML, template = empty, richtext = no, published, hidden from menus, content = [[!GoogleSiteMap]]
@@ -51,12 +52,6 @@
 7. If you don't want ".html" added to the end of friendly URLs, go to System/Content Types and blank out the .html extension, then press save
 
 8. If you're not using sessions on the front end of your site (ie - logins, cart, etc) you can set "session_enabled" to 0 on the "web" context settings panel [More details](http://develop.modx.com/blog/2012/04/05/new-for-2.2.1-session-less-contexts/?utm_source=modx_forum&utm_medium=modx&utm_campaign=dev_blog&utm_content=sessionless_contexts)
-
-9. Update your FormIt chunk to have the correct email address/Thank You page ID
-
-10. Update your "articles.aside" duplicated chunk and replace {ID_OF_SEARCH_RESULTS_LANDING_PAGE} with the ID of the Search Results page you created earlier
-
-11. Update your "site.head" duplicated chunk - swap out the placeholder texts with the correct details, or remove the lines if you do not require them
 
 12. These bits might come in handy to add to your MODX .htaccess file in the root of the site (all shamelessly stolen from the [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate):
 
