@@ -1,27 +1,21 @@
 [[!FormIt?
     &hooks=`fiProcessArrays,email,FormItAutoResponder,FormItSaveForm,redirect`
-    &emailTpl=`[[+emailChunk]]`
-    &emailTo=`[[+toEmailAddress]]`
+    &emailTpl=`fi.contact-email`
+    &emailTo=`[[++contactToEmailAddress]]`
     &emailSubject=`Contact from [[++site_name]]`
-    &emailFromName=`[[+fromEmailName]]`
-    &emailFrom=`[[+fromEmailAddress]]`
-    &redirectTo=`[[+redirectTo]]`
-    &validate=`[[+validation:default=`
-        formName:required,
-        formEmailAddress:email:required,
-        formQuery:required,
-        whatAreYouDoing:blank
-    `]]`
+    &emailFromName=`[[++contactFromEmailName]]`
+    &emailFrom=`[[++contactFromEmailAddress]]`
+    &redirectTo=`[[++contactRedirectTo]]`
+    &validate=`formName:required,formEmailAddress:email:required,formQuery:required,whatAreYouDoing:blank`
     &vTextRequired=`required`
     &errTpl=`[[+error]]`
-    &recaptchaTheme=`[[+recaptchaTheme:default=`blackglass`]]`
-    &fiarTpl=`[[+auroresponseChunk]]`
+    &fiarTpl=`fi.contact-autoresponse`
     &fiarSubject=`Thank you for your email`
     &fiarToField=`formEmailAddress`
-    &fiarReplyTo=`[[+replyToEmailAddress]]`
-    &fiarReplyToName=`[[+replyToEmailName]]`
-    &fiarFrom=`[[+autoResponseFromAddress]]`
-    &fiarFromName=`[[+autoResponseFromName]]`
+    &fiarReplyTo=`[[++contactReplyToEmailAddress]]`
+    &fiarReplyToName=`[[++contactReplyToEmailName]]`
+    &fiarFrom=`[[++contactAutoEmailFromAddress]]`
+    &fiarFromName=`[[++contactAutoEmailFromName]]`
     &store=`1`
     &formFields=`fieldNames,formPhoneNumber,formEmailAddress,formQuery`
     &fieldNames=`formName==Name,formPhoneNumber==Phone,formEmailAddress==Email,formQuery==Enquiry`
@@ -29,32 +23,32 @@
 
 [[!+fi.error_message:notempty=`<p class="error">[[!+fi.error_message]]</p>`]]
 
-<form method="post" action="[[~[[*id]]]]" id="contactusform">
+<form method="post" action="[[~[[*id]]]]" id="contact-us">
     <fieldset>
         <legend>Contact Us</legend>
         <input type="hidden" value="[[*pagetitle]]" name="formPage" id="formPage">
 
-        <div[[!+fi.error.formName:notempty=` class="error-state"`]]>
+        <div class="[[!+fi.error.formName:notempty=` error-state`]]"">
             <label for="formName">Name</label>
-            <div class="error">[[!+fi.error.formName:notempty=`[[!+fi.error.formName]]`]]</div>
+            [[!+fi.error.formName:notempty=`<div class="error">[[!+fi.error.formName]]</div>`]]
             <input type="text" name="formName" id="formName" value="[[!+fi.formName]]" placeholder="Your name" required>
         </div>
 
-        <div[[!+fi.error.formPhoneNumber:notempty=` class="error-state"`]]>
+        <div class="[[!+fi.error.formPhoneNumber:notempty=` error-state`]]"">
             <label for="formPhoneNumber">Phone number</label>
-            <div class="error">[[!+fi.error.formPhoneNumber:notempty=`[[!+fi.error.formPhoneNumber]]`]]</div>
+            [[!+fi.error.formPhoneNumber:notempty=`<div class="error">[[!+fi.error.formPhoneNumber]]</div>`]]
             <input type="text" name="formPhoneNumber" id="formPhoneNumber" value="[[!+fi.formPhoneNumber]]" placeholder="Your phone number" required>
         </div>
 
-        <div[[!+fi.error.formEmailAddress:notempty=` class="error-state"`]]>
+        <div class="[[!+fi.error.formEmailAddress:notempty=` error-state`]]"">
             <label for="formEmailAddress">Email address</label>
-            <div class="error">[[!+fi.error.formEmailAddress:notempty=`[[!+fi.error.formEmailAddress]]`]]</div>
+            [[!+fi.error.formEmailAddress:notempty=`<div class="error">[[!+fi.error.formEmailAddress]]</div>`]]
             <input type="email" name="formEmailAddress" id="formEmailAddress" value="[[!+fi.formEmailAddress]]" placeholder="Your email address" required>
         </div>
 
-        <div[[!+fi.error.formQuery:notempty=` class="error-state"`]]>
+        <div class="[[!+fi.error.formQuery:notempty=` error-state`]]"">
             <label for="formQuery">Your enquiry</label>
-            <div class="error">[[!+fi.error.formQuery:notempty=`[[!+fi.error.formQuery]]`]]</div>
+            [[!+fi.error.formQuery:notempty=`<div class="error">[[!+fi.error.formQuery]]</div>`]]
             <textarea rows="5" cols="30" name="formQuery" id="formQuery" placeholder="Your enquiry" required>[[!+fi.formQuery]]</textarea>
         </div>
 
