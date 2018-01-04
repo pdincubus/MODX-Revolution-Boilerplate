@@ -1,8 +1,6 @@
 [[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
+[[$[[++chunkPrefix]].site.head? &bodyClasses=`[[+uParent]]` &websiteType=`blog`]]
 
-[[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`blog`]]
-
-<main>
     <article>
         <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
 
@@ -15,6 +13,5 @@
 
         [[!+page.nav:notempty=`[[!+page.nav]]`]]
     </article>
-</main>
 
-[[$site.foot]]
+[[$[[++chunkPrefix]].site.foot]]

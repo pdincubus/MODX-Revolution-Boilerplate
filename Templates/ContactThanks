@@ -1,12 +1,10 @@
 [[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
+[[$[[++chunkPrefix]].site.head? &bodyClasses=`[[+uParent]]` &websiteType=`website`]]
 
-[[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`website`]]
-
-<main>
     <article>
         <h1>Thank you!</h1>
+
         <p>Thank you for contacting us, [[!+fi.name]]. An email will be sent to you at [[!+fi.email]].</p>
     </article>
-</main>
 
-[[$site.foot]]
+[[$[[++chunkPrefix]].site.foot]]

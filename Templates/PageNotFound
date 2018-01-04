@@ -1,11 +1,11 @@
 [[sph? &ph=`uParent == Uparent.link_attributes !! link_attributes` &delimiter=` `]]
+[[$[[++chunkPrefix]].site.head? &bodyClasses=`[[+uParent]]` &websiteType=`website`]]
 
-[[$site.head? &bodyClasses=`[[+uParent]]` &websiteType=`website`]]
-
-<main>
     <article>
         <h1>[[*longtitle:escape:default=`[[*pagetitle:escape]]`]]</h1>
+
         [[*introtext:notempty=`<p class="intro">[[*introtext]]</p>`]]
+
         [[*content]]
 
         <h2>Possible matches for '[[!currentUrl]]'</h2>
@@ -21,6 +21,5 @@
             &containerTpl=`ss.result-container`
         ]]
     </article>
-</main>
 
-[[$site.foot]]
+[[$[[++chunkPrefix]].site.foot]]
