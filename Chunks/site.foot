@@ -1,29 +1,16 @@
-        <footer class="site-footer">
+        </main>
+
+        <footer class="site-foot">
             <p>&copy; [[!copyYears?startYear=`2014`]] <a href="[[++site_url]]">[[++site_name]]</a></p>
         </footer>
 
-        <!-- use https://github.com/js-cookie/js-cookie to check and set cookies and add some JS to the button click for old IE users! -->
+        <noscript>
+            <p class="noscript-warning">
+                You're running a browser with Javascript disabled. For the best experience, please enable Javascript in your browser settings.
+            </p>
+        </noscript>
 
-        <div class="old-browser" aria-live="assertive" aria-hidden="true">
-            <p>You are using a very old browser.</p>
-            <p>For the best experience please upgrade to a newer browser, like Chrome, Opera, Firefox, Edge or Safari.</p>
-            <p>While we have made every effort for this site to be accessible to all, we cannot guarantee the full experience in your current browser.</p>
-
-            <button type="button" class="old-browser-accept">Understood, don't show me this again.</button>
-
-            <p><small>This stores a cookie on your computer to remember your settings</small></p>
-        </div>
-
-        <noscript><p>You're running a browser with Javascript disabled. For the best experience, please enable Javascript in your browser settings.</p></noscript>
-
-        <!--easy way to trigger javascript functionality base on actual CSS breakpoints-->
-        <div class="trigger-size mobile"></div>
-        <div class="trigger-size mobile-large"></div>
-        <div class="trigger-size tablet"></div>
-        <div class="trigger-size desktop"></div>
-        <div class="trigger-size desktop-wide"></div>
-
-        <script src="/assets/templates/[[++templateFolderName]]/js/general.js"></script>
+        <script src="/assets/templates/[[++templateFolderName]]/js/site.js"></script>
 
         [[++gaSiteCode:notempty=`
         <script>
